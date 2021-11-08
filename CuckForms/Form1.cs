@@ -25,16 +25,18 @@ namespace CuckForms
             foreach (var cat in categories)
             {
                 cbCategories.Items.Add(cat);
-                // cbCategories.DataSource = categories;
             }
-            // needs to return something because of async but i dont have anything to return should be void...
-            // cant change from asyc because GetCategories is async
         }
 
         private void btnGenerateJoke_Click(object sender, EventArgs e)
         {
             // Get random joke
             // load joke into textbox to view
+        }
+
+        private void cbCategories_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
