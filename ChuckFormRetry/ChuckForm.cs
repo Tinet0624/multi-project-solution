@@ -32,11 +32,13 @@ namespace ChuckFormRetry
 
         private async void LoadComboBox()
         {
+            cbCategories.Items.Add("-Select a category-");
             IEnumerable<string> categories = await ChuckNorrisClient.GetCategories();
             foreach (var cat in categories)
             {
                 cbCategories.Items.Add(cat);
             }
+            cbCategories.SelectedIndex = 0;
         }
 
     }

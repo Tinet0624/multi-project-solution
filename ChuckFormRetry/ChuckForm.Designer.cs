@@ -50,6 +50,7 @@
             this.cbCategories.Name = "cbCategories";
             this.cbCategories.Size = new System.Drawing.Size(266, 23);
             this.cbCategories.TabIndex = 1;
+            this.cbCategories.Tag = "";
             this.cbCategories.SelectedIndexChanged += new System.EventHandler(this.cbCategories_SelectedIndexChanged);
             // 
             // lbJokeOutput
